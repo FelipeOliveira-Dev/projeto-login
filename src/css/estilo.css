@@ -1,0 +1,133 @@
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #1e1929;
+}
+
+.conteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texto-imagem, 
+.form-login{
+    margin: 100px;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.titulo-principal{
+    font-family: 'Poppins', sans-serif;
+    color: #00ff88;
+    font-size: 30px;
+    margin: 0;
+}
+
+.imagem-principal{
+    width: 100%;
+}
+
+.formulario{
+    background-color: #2f2841;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 340px;
+}
+
+.titulo-formulario{
+    font-family: 'Lato', sans-serif;
+    color: #00ff88;
+    text-align: center;
+}
+
+.form-login .ent-dados{
+    position: relative;
+}
+
+.label{
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin-top: 30px;
+    display: block;
+    margin-left: 15%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.ent-usuario, 
+.ent-senha{
+    background-color: #514869;
+    border: none;
+    width: 70%;
+    height: 10%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.ent-usuario:focus, 
+.ent-senha:focus{
+    border: 3px solid #00ff88;
+    box-shadow: 0 0 20px #00ff88;
+    transition: 1s ease-in-out;
+}
+
+.formulario input::-webkit-input-placeholder{
+    color: #2f2841;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.bt-entrar{
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #00ff88;
+    border: none;
+    width: 70%;
+    height: 10%;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: #514869;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 1s ease-in-out;
+}
+
+.bt-entrar:hover{
+    color: #ffffff;
+    width: 70%;
+    height: 10%;
+    box-shadow: 0 0 20px #00ff88;
+    transition: 1s ease-in-out;
+}
+
+@media (max-width: 1120px){
+    .conteudo-principal{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .texto-imagem, 
+    .form-login{
+        
+        margin: 0 auto ;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-principal{
+        display: none;
+    }
+    .imagem-principal{
+        width: 100%;
+    }
+    .formulario{
+        width: 300px;
+    }
+}
